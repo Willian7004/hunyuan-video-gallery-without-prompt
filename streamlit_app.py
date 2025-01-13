@@ -93,7 +93,7 @@ else:
             with cols_display[col_idx]:
                 file_path = os.path.join(folder_path, file)
                 if media_type == "图片":
-                    st.image(file_path, use_column_width=True)
+                    st.image(file_path)
                 else:
                     st.video(file_path, format="video/mp4", start_time=0,loop=True, autoplay=True)
 
